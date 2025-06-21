@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayden - TikTok Content Strategist</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="ayden_styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="scale-toggle" onclick="toggleScale()">
+                <div class="scale-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 2H17C18.1 2 19 2.9 19 4V20C19 21.1 18.1 22 17 22H7C5.9 22 5 21.1 5 20V4C5 2.9 5.9 2 7 2ZM7 4V20H17V4H7Z" fill="currentColor"/>
+                    </svg>
+                </div>
+                <span class="scale-text">Mobile View</span>
+            </div>
+            <div class="logo" onclick="scrollToTop()">Ayden</div>
+            <div class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#services" onclick="closeMobileMenu()">Services</a></li>
+                <li><a href="#testimonials" onclick="closeMobileMenu()">Reviews</a></li>
+                <li><a href="#contact" onclick="closeMobileMenu()">Contact</a></li>
+                <li><a href="https://gumroad.com" class="btn-courses-small" target="_blank">Mini Courses – Learn to Go Viral</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-container">
+            <h1>Hi, I'm <span class="highlight">Ayden</span> – a TikTok Content Strategist.</h1>
+            <p>With years of experience and over 500M views, I help Roblox games and online businesses grow through organic TikTok content.</p>
+            
+            <div class="stats">
+                <div class="stat">
+                    <div class="stat-header">
+                        <div class="stat-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4zm2.5 2.5h-15V5h15v14.5z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <span class="stat-number" data-target="500">0</span><span class="stat-unit">M+</span>
+                    <span class="stat-label">Total Views Generated</span>
+                </div>
+                <div class="stat">
+                    <div class="stat-header">
+                        <div class="stat-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <span class="stat-number" data-target="50">0</span><span class="stat-unit">+</span>
+                    <span class="stat-label">Successful Campaigns</span>
+                </div>
+                <div class="stat">
+                    <div class="stat-header">
+                        <div class="stat-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 4V2C7 1.45 7.45 1 8 1S9 1.45 9 2V4H15V2C15 1.45 15.45 1 16 1S17 1.45 17 2V4H20C21.1 4 22 4.9 22 6V20C22 21.1 21.1 22 20 22H4C2.9 22 2 21.1 2 20V6C2 4.9 2.9 4 4 4H7Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <span class="stat-number" data-target="2">0</span><span class="stat-unit">M+</span>
+                    <span class="stat-label">Average Video Views</span>
+                </div>
+                <div class="stat stat-centered">
+                    <div class="stat-header">
+                        <div class="stat-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <span class="stat-number" data-target="98">0</span><span class="stat-unit">%</span>
+                    <span class="stat-label">Client Satisfaction</span>
+                </div>
+            </div>
+            
+
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="services-container">
+            <h2 class="section-title">My Services</h2>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17 10.5V7C17 4.24 14.76 2 12 2S7 4.24 7 7V10.5C5.34 10.5 4 11.84 4 13.5V19C4 20.66 5.34 22 7 22H17C18.66 22 20 20.66 20 19V13.5C20 11.84 18.66 10.5 17 10.5Z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Sponsored Video Promotion</h3>
+                    <p class="service-description">I'll create and post a sponsored video on my TikTok account to promote your Roblox game or business. With my proven track record, your content will reach millions of engaged viewers.</p>
+                    <div class="service-price">$90</div>
+                    <p class="service-note">Perfect for game launches and brand awareness</p>
+                    <button class="contact-btn" onclick="scrollToContact()">Get Started</button>
+                </div>
+                
+                <div class="service-card featured">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3ZM9 17H7V10H9V17ZM13 17H11V7H13V17ZM17 17H15V13H17V17Z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Social Media Management</h3>
+                    <p class="service-description">Complete TikTok content strategy and management. I'll handle everything from content creation to posting schedules, ensuring consistent growth for your brand.</p>
+                    <div class="price-options">
+                        <div class="price-option">
+                            <span class="package-name">Monthly Management</span>
+                            <span class="package-price">$500/month</span>
+                        </div>
+                        <div class="price-option premium">
+                            <span class="package-name">Premium Package</span>
+                            <span class="package-price">$1500/3 months</span>
+                            <span class="package-savings">($500 off)</span>
+                        </div>
+                    </div>
+                    <p class="service-note">Includes content creation, posting, and growth strategy</p>
+                    <button class="contact-btn" onclick="scrollToContact()">Get Started</button>
+                </div>
+            </div>
+            
+
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <div class="testimonials-container">
+            <h2 class="section-title">Client Reviews</h2>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card fade-in">
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Ayden's sponsored video for our Roblox game went viral with 3.2M views! Our player count increased by 200% in just one week."</p>
+                    <div class="testimonial-author">- Game Developer Client</div>
+                </div>
+                
+                <div class="testimonial-card fade-in">
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Professional, fast delivery, and amazing results. Our TikTok following grew by 10k in just one month with Ayden's management."</p>
+                    <div class="testimonial-author">- Brand Manager</div>
+                </div>
+                
+                <div class="testimonial-card fade-in">
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"The sponsored video Ayden created went viral and got over 2M views! Incredible ROI for our marketing budget."</p>
+                    <div class="testimonial-author">- Startup Founder</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="results">
+        <div class="results-container">
+            <h2 class="section-title">Viral Video Examples:</h2>
+            
+            <div class="tiktok-grid">
+                <a href="https://www.tiktok.com/@ayd7nn/video/7417501853610446113" target="_blank" class="tiktok-card">
+                    <div class="tiktok-thumbnail">
+                        <iframe class="embedded-video" 
+                                src="https://www.tiktok.com/embed/v2/7417501853610446113" 
+                                frameborder="0" 
+                                allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="tiktok-info">
+                        <div class="tiktok-title">This roblox game is BETTER than pls donate?</div>
+                        <div class="tiktok-views">7.4M views</div>
+                    </div>
+                </a>
+                
+                <a href="https://www.tiktok.com/@ayd7nn/video/7431597143346908449" target="_blank" class="tiktok-card">
+                    <div class="tiktok-thumbnail">
+                        <iframe class="embedded-video" 
+                                src="https://www.tiktok.com/embed/v2/7431597143346908449" 
+                                frameborder="0" 
+                                allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="tiktok-info">
+                        <div class="tiktok-title">0 robux boy outfit idea</div>
+                        <div class="tiktok-views">12.1M views</div>
+                    </div>
+                </a>
+                
+                <a href="https://www.tiktok.com/@ayd7nn/video/7398121694159867169" target="_blank" class="tiktok-card">
+                    <div class="tiktok-thumbnail">
+                        <iframe class="embedded-video" 
+                                src="https://www.tiktok.com/embed/v2/7398121694159867169" 
+                                frameborder="0" 
+                                allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="tiktok-info">
+                        <div class="tiktok-title">0 robux rich outfit idea</div>
+                        <div class="tiktok-views">3.8M views</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="contact-container">
+            <h2 class="section-title">Ready to Go Viral?</h2>
+            <p class="contact-description">Building or launching something big? I help Roblox games and digital brands grow fast with TikTok content that gets results.</p>
+            <p class="contact-cta">If you're serious about standing out—get in touch now.<br>Let's turn your vision into momentum.</p>
+            
+            <div class="contact-methods">
+                <a href="https://discord.gg/users/ayd7nn" class="contact-method" target="_blank">
+                    <span class="contact-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.317 4.369a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.211.375-.445.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37.07.07 0 0 0 3.647 4.4C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.196.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.331c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z" fill="currentColor"/>
+                        </svg>
+                    </span>
+                    <span>Discord: ayd7nn</span>
+                </a>
+                
+                <a href="https://instagram.com/_ayd7nn" class="contact-method" target="_blank">
+                    <span class="contact-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.40s-.644-1.44-1.439-1.44z" fill="currentColor"/>
+                        </svg>
+                    </span>
+                    <span>Instagram: _ayd7nn</span>
+                </a>
+                
+                <a href="mailto:aydenb@outlook.sa" class="contact-method">
+                    <span class="contact-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 4H4C2.9 4 2.01 4.9 2.01 6L2 18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 8L12 13L4 8V6L12 11L20 6V8Z" fill="currentColor"/>
+                        </svg>
+                    </span>
+                    <span>Email: aydenb@outlook.sa</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; 2025 Ayden - TikTok Content Strategist. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+
+    <script src="ayden_script.js"></script>
+</body>
+</html>
